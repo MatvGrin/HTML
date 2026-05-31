@@ -1,0 +1,43 @@
+ /*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.faq {
+  display: grid;
+  gap: 12px;
+}
+
+.faq details {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: var(--soft-shadow);
+}
+
+.faq summary {
+  font-weight: 950;
+  cursor: pointer;
+}
+
+.faq details[open] {
+  border-color: var(--brand);
+  background: #fbfcff;
+}
+
+.faq p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* Final polish note:
+   These last rules are about visual comfort, not new HTML theory.
+   They make the example easier to view in a real browser tab: balanced spacing,
+   readable sizes, smooth hover states, and safer responsive behavior. */
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

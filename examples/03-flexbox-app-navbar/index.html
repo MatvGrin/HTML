@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox App Navbar</title>
+
+  <link rel="stylesheet" href="../../assets/shared.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="container">
+      <a class="back-link" href="../../index.html">← Back to all examples</a>
+
+      <span class="lesson-badge">
+        Flexbox alignment, responsive navigation, gap, wrapping
+      </span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="lesson-hero">
+      <span class="pill">HTML + CSS Lesson</span>
+
+      <h1>Flexbox App Navbar</h1>
+
+      <p>
+        Flexbox alignment, responsive navigation, gap, wrapping.
+        This page is built as a practical mini project, not as a tiny isolated snippet,
+        so you can open it in the browser and play with the layout.
+      </p>
+    </section>
+
+    <section class="theory" aria-labelledby="theory-title">
+
+      <article>
+        <h2 id="theory-title">Theory in simple words</h2>
+
+        <p>
+          Flexbox is ideal for one-dimensional alignment: items in a row or a column.
+          Navigation bars usually need spacing, centering, wrapping, and push-left/push-right behavior,
+          so Flexbox keeps the CSS simple.
+        </p>
+
+        <p>
+          <strong>How to study this file:</strong>
+          first look at the HTML comments to understand the meaning of the tags.
+          Then open <code>style.css</code> and change spacing, colors, grid sizes, or states.
+          Small changes are the fastest way to learn CSS.
+        </p>
+      </article>
+
+      <aside>
+        <h2>What to try</h2>
+
+        <p>
+          Hover the links and make the screen narrow to see how wrapping keeps the menu usable.
+        </p>
+
+        <pre class="code-hint"><code>
+&lt;!-- Flexbox App Navbar: inspect semantic tags and CSS rules. --&gt;
+/* Change one variable or one layout rule and refresh. */
+        </code></pre>
+      </aside>
+
+    </section>
+
+    <section class="demo-stage" aria-labelledby="demo-title">
+
+      <p class="demo-label">Live browser example</p>
+
+      <h2 id="demo-title">Interactive demo</h2>
+
+      <nav class="app-nav" aria-label="Demo navigation">
+
+        <a class="logo" href="#">NovaApp</a>
+
+        <div class="links">
+          <a href="#">Features</a>
+          <a href="#">Docs</a>
+          <a href="#">Pricing</a>
+          <a href="#">Support</a>
+        </div>
+
+        <a class="btn" href="#">Start free</a>
+
+      </nav>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

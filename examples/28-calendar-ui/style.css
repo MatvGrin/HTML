@@ -1,0 +1,60 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar > b {
+  text-align: center;
+  color: var(--muted);
+}
+
+.day {
+  min-height: 105px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: var(--soft-shadow);
+}
+
+.day span {
+  font-weight: 950;
+}
+
+.day em {
+  display: block;
+  margin-top: 10px;
+  background: var(--brand);
+  color: white;
+  border-radius: 999px;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-style: normal;
+}
+
+@media (max-width: 760px) {
+  .calendar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .calendar > b {
+    display: none;
+  }
+}
+
+/* Final polish note:
+   These last rules are about visual comfort, not new HTML theory.
+   They make the example easier to view in a real browser tab: balanced spacing,
+   readable sizes, smooth hover states, and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

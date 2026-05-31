@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magazine Grid</title>
+  <link rel="stylesheet" href="../../assets/shared.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="back-link" href="../../index.html">
+        ← Back to all examples
+      </a>
+
+      <span class="lesson-badge">
+        advanced grid placement, editorial layout, featured story
+      </span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="lesson-hero">
+      <span class="pill">HTML + CSS Lesson</span>
+      <h1>Magazine Grid</h1>
+
+      <p>
+        advanced grid placement, editorial layout, featured story. This page is built as a practical mini project,
+        not as a tiny isolated snippet, so you can open it in the browser and play with the layout.
+      </p>
+    </section>
+
+    <section class="theory" aria-labelledby="theory-title">
+      <article>
+        <h2 id="theory-title">Theory in simple words</h2>
+
+        <p>
+          Editorial layouts often use asymmetric grids to create energy.
+          CSS Grid allows items to span columns and rows, making a magazine page feel designed rather than repetitive.
+        </p>
+
+        <p>
+          <strong>How to study this file:</strong>
+          first look at the HTML comments to understand the meaning of the tags.
+          Then open <code>style.css</code> and change spacing, colors, grid sizes, or states.
+          Small changes are the fastest way to learn CSS.
+        </p>
+      </article>
+
+      <aside>
+        <h2>What to try</h2>
+
+        <p>
+          Notice how the feature article gets more space than supporting stories.
+        </p>
+
+        <pre class="code-hint"><code>
+&lt;!-- Magazine Grid: inspect semantic tags and CSS rules. --&gt;
+/* Change one variable or one layout rule and refresh. */
+        </code></pre>
+      </aside>
+    </section>
+
+    <section class="demo-stage" aria-labelledby="demo-title">
+      <p class="demo-label">Live browser example</p>
+      <h2 id="demo-title">Interactive demo</h2>
+
+      <div class="editorial">
+        <article class="big">
+          <h3>Featured story with strong visual hierarchy</h3>
+          <p>Large cards tell users where to start reading.</p>
+        </article>
+
+        <article>
+          <h3>Smaller story</h3>
+          <p>Secondary content supports the main item.</p>
+        </article>
+
+        <article>
+          <h3>Case study</h3>
+          <p>Grid placement makes the page less repetitive.</p>
+        </article>
+
+        <article>
+          <h3>Notes</h3>
+          <p>Use spans carefully to create rhythm.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

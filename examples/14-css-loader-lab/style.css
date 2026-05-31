@@ -1,0 +1,68 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.loader-lab {
+  display: grid;
+  place-items: center;
+  gap: 24px;
+  background: #101828;
+  color: white;
+  border-radius: 28px;
+  padding: 50px;
+}
+
+.ring {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, .2);
+  border-top-color: var(--accent);
+  animation: spin 1s linear infinite;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+}
+
+.dots span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  animation: bounce .8s ease-in-out infinite alternate;
+}
+
+.dots span:nth-child(2) {
+  animation-delay: .15s;
+}
+
+.dots span:nth-child(3) {
+  animation-delay: .3s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-12px);
+    opacity: .45;
+  }
+}
+
+/* Final polish note:
+   These last rules are about visual comfort, not new HTML theory.
+   They make the example easier to view in a real browser tab: balanced spacing,
+   readable sizes, smooth hover states, and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

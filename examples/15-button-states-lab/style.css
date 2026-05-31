@@ -1,0 +1,66 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.button-lab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  background: var(--paper);
+  padding: 26px;
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+}
+
+.button-lab button {
+  border: 0;
+  border-radius: 16px;
+  padding: 14px 20px;
+  font-weight: 950;
+  cursor: pointer;
+  background: var(--brand);
+  color: white;
+  transition: transform .2s, box-shadow .2s, background .2s;
+}
+
+.button-lab button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 24px rgba(91, 108, 255, .25);
+}
+
+.button-lab button:active {
+  transform: translateY(1px);
+}
+
+.button-lab button:focus-visible {
+  outline: 4px solid rgba(91, 108, 255, .25);
+  outline-offset: 3px;
+}
+
+.ghost {
+  background: #eef2ff !important;
+  color: var(--brand) !important;
+}
+
+.danger {
+  background: var(--danger) !important;
+}
+
+.button-lab button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Final polish note:
+   These last rules are about visual comfort, not new HTML theory.
+   They make the example easier to view in a real browser tab: balanced spacing,
+   readable sizes, smooth hover states, and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

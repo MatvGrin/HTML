@@ -1,0 +1,75 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.news-layout {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 20px;
+}
+
+.headline,
+.news-layout figure,
+.fact-box,
+.news-layout section {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: var(--soft-shadow);
+}
+
+.headline {
+  grid-column: span 2;
+  background: linear-gradient(135deg, #fff, #eef1ff);
+}
+
+.headline h3 {
+  font-size: clamp(30px, 5vw, 56px);
+  margin: .2em 0;
+}
+
+.eyebrow {
+  color: var(--brand);
+  font-weight: 900;
+}
+
+.fake-photo {
+  min-height: 220px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #172033, #5b6cff);
+  color: white;
+  font-weight: 900;
+}
+
+.fact-box {
+  border-left: 8px solid var(--accent);
+}
+
+@media (max-width: 760px) {
+  .news-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .headline {
+    grid-column: auto;
+  }
+}
+
+/*
+  Final polish note:
+
+  These last rules are about visual comfort, not new HTML theory.
+
+  They make the example easier to view in a real browser tab:
+  balanced spacing, readable sizes, smooth hover states,
+  and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

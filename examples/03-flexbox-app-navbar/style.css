@@ -1,0 +1,63 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #101828;
+  color: white;
+  padding: 16px;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 950;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  padding: 10px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #dbeafe;
+}
+
+.links a:hover {
+  background: rgba(255, 255, 255, .12);
+}
+
+.app-nav .btn {
+  background: white;
+  color: #101828;
+  box-shadow: none;
+}
+
+/*
+  Final polish note:
+
+  These last rules are about visual comfort, not new HTML theory.
+
+  They make the example easier to view in a real browser tab:
+  balanced spacing,
+  readable sizes,
+  smooth hover states,
+  and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

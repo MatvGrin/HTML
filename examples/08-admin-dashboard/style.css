@@ -1,0 +1,77 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 18px;
+}
+
+.dashboard aside,
+.panel,
+.stats article {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: var(--soft-shadow);
+}
+
+.dashboard aside {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.dashboard aside a {
+  padding: 10px;
+  border-radius: 12px;
+  color: var(--muted);
+}
+
+.dashboard aside a:hover {
+  background: #eef2ff;
+  color: var(--brand);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.stats b {
+  display: block;
+  font-size: 32px;
+  margin-top: 6px;
+}
+
+@media (max-width: 760px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*
+  Final polish note:
+
+  These last rules are about visual comfort, not new HTML theory.
+
+  They make the example easier to view in a real browser tab:
+  balanced spacing,
+  readable sizes,
+  smooth hover states,
+  and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="../../assets/shared.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="back-link" href="../../index.html">← Back to all examples</a>
+      <span class="lesson-badge">
+        menu sections, price alignment, sticky category nav, print-friendly UI
+      </span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="lesson-hero">
+      <span class="pill">HTML + CSS Lesson</span>
+
+      <h1>Restaurant Menu</h1>
+
+      <p>
+        menu sections, price alignment, sticky category nav, print-friendly UI.
+        This page is built as a practical mini project, not as a tiny isolated snippet,
+        so you can open it in the browser and play with the layout.
+      </p>
+    </section>
+
+    <section class="theory" aria-labelledby="theory-title">
+      <article>
+        <h2 id="theory-title">Theory in simple words</h2>
+
+        <p>
+          Restaurant menus need fast scanning. Categories, dish names, descriptions,
+          dietary labels, and prices must align cleanly. CSS can make the page attractive
+          while keeping the menu printable.
+        </p>
+
+        <p>
+          <strong>How to study this file:</strong>
+          first look at the HTML comments to understand the meaning of the tags.
+          Then open <code>style.css</code> and change spacing, colors, grid sizes,
+          or states. Small changes are the fastest way to learn CSS.
+        </p>
+      </article>
+
+      <aside>
+        <h2>What to try</h2>
+
+        <p>
+          The sticky category nav helps move between sections on a long menu.
+        </p>
+
+        <pre class="code-hint">
+<code>
+&lt;!-- Restaurant Menu: inspect semantic tags and CSS rules. --&gt;
+/* Change one variable or one layout rule and refresh. */
+</code>
+        </pre>
+      </aside>
+    </section>
+
+    <section class="demo-stage" aria-labelledby="demo-title">
+      <p class="demo-label">Live browser example</p>
+
+      <h2 id="demo-title">Interactive demo</h2>
+
+      <nav class="menu-nav">
+        <a href="#starters">Starters</a>
+        <a href="#mains">Mains</a>
+        <a href="#desserts">Desserts</a>
+      </nav>
+
+      <div class="menu">
+
+        <section id="starters">
+          <h3>Starters</h3>
+          <p>
+            <b>Bruschetta</b>
+            <span>$8</span>
+            <small>Tomato, basil, olive oil</small>
+          </p>
+        </section>
+
+        <section id="mains">
+          <h3>Mains</h3>
+          <p>
+            <b>Sea risotto</b>
+            <span>$18</span>
+            <small>Creamy rice with Adriatic seafood</small>
+          </p>
+        </section>
+
+        <section id="desserts">
+          <h3>Desserts</h3>
+          <p>
+            <b>Lemon cake</b>
+            <span>$7</span>
+            <small>Soft sponge with citrus cream</small>
+          </p>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

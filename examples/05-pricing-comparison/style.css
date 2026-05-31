@@ -1,0 +1,64 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.pricing-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  align-items: center;
+}
+
+.pricing-wrap article {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  padding: 24px;
+  box-shadow: var(--soft-shadow);
+}
+
+.pricing-wrap .featured {
+  background: #101828;
+  color: white;
+  transform: scale(1.04);
+  position: relative;
+}
+
+.featured span {
+  position: absolute;
+  top: -14px;
+  right: 22px;
+  background: var(--accent);
+  color: #3b2500;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-weight: 900;
+}
+
+.price {
+  font-size: 48px;
+  font-weight: 950;
+  margin: 10px 0;
+}
+
+.pricing-wrap li {
+  margin: 10px 0;
+}
+
+/*
+  Final polish note:
+
+  These last rules are about visual comfort, not new HTML theory.
+
+  They make the example easier to view in a real browser tab:
+  balanced spacing,
+  readable sizes,
+  smooth hover states,
+  and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

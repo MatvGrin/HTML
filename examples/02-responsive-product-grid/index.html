@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Product Grid</title>
+
+  <link rel="stylesheet" href="../../assets/shared.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="container">
+      <a class="back-link" href="../../index.html">← Back to all examples</a>
+
+      <span class="lesson-badge">
+        CSS Grid, auto-fit, product cards, responsive spacing
+      </span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="lesson-hero">
+      <span class="pill">HTML + CSS Lesson</span>
+
+      <h1>Responsive Product Grid</h1>
+
+      <p>
+        CSS Grid, auto-fit, product cards, responsive spacing.
+        This page is built as a practical mini project, not as a tiny isolated snippet,
+        so you can open it in the browser and play with the layout.
+      </p>
+    </section>
+
+    <section class="theory" aria-labelledby="theory-title">
+
+      <article>
+        <h2 id="theory-title">Theory in simple words</h2>
+
+        <p>
+          A product grid is a common responsive pattern. CSS Grid is good here because the layout has rows and columns.
+          The auto-fit/minmax combination lets the browser decide how many cards fit in one row without writing many breakpoints.
+        </p>
+
+        <p>
+          <strong>How to study this file:</strong>
+          first look at the HTML comments to understand the meaning of the tags.
+          Then open <code>style.css</code> and change spacing, colors, grid sizes, or states.
+          Small changes are the fastest way to learn CSS.
+        </p>
+      </article>
+
+      <aside>
+        <h2>What to try</h2>
+
+        <p>
+          Resize the browser window and watch cards naturally move from many columns to fewer columns.
+        </p>
+
+        <pre class="code-hint"><code>
+&lt;!-- Responsive Product Grid: inspect semantic tags and CSS rules. --&gt;
+/* Change one variable or one layout rule and refresh. */
+        </code></pre>
+      </aside>
+
+    </section>
+
+    <section class="demo-stage" aria-labelledby="demo-title">
+
+      <p class="demo-label">Live browser example</p>
+
+      <h2 id="demo-title">Interactive demo</h2>
+
+      <div class="product-grid">
+
+        <article class="product">
+          <span>New</span>
+          <div class="shape one"></div>
+          <h3>Noise Canceling Headphones</h3>
+          <p>Comfortable audio for focused work.</p>
+          <strong>$149</strong>
+        </article>
+
+        <article class="product">
+          <span>Sale</span>
+          <div class="shape two"></div>
+          <h3>Mechanical Keyboard</h3>
+          <p>Tactile keys with a compact layout.</p>
+          <strong>$89</strong>
+        </article>
+
+        <article class="product">
+          <span>Eco</span>
+          <div class="shape three"></div>
+          <h3>Desk Lamp</h3>
+          <p>Warm light with flexible brightness.</p>
+          <strong>$39</strong>
+        </article>
+
+        <article class="product">
+          <span>Pro</span>
+          <div class="shape four"></div>
+          <h3>USB-C Dock</h3>
+          <p>Connect displays, power, and storage.</p>
+          <strong>$119</strong>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

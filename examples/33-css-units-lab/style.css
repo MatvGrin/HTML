@@ -1,0 +1,53 @@
+ /*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.units {
+  display: grid;
+  gap: 16px;
+}
+
+.units div {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: var(--soft-shadow);
+  font-weight: 950;
+}
+
+/* rem = relative to root font-size */
+.rem {
+  font-size: 1.25rem;
+  width: 22rem;
+}
+
+/* vw = viewport width (responsive to screen size) */
+.vw {
+  width: 60vw;
+  max-width: 760px;
+}
+
+/* clamp = fluid size between min, preferred, max */
+.clamp {
+  font-size: clamp(1.4rem, 4vw, 3.5rem);
+  width: min(100%, 70ch);
+}
+
+/*
+  Final polish note:
+
+  These last rules are about visual comfort, not new HTML theory.
+
+  They make the example easier to view in a real browser tab:
+  balanced spacing,
+  readable sizes,
+  smooth hover states,
+  and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

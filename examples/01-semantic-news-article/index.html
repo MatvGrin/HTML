@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semantic News Article</title>
+
+  <link rel="stylesheet" href="../../assets/shared.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="container">
+      <a class="back-link" href="../../index.html">← Back to all examples</a>
+
+      <span class="lesson-badge">
+        HTML semantics, readable article structure, aside, figure, accessible landmarks
+      </span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="lesson-hero">
+      <span class="pill">HTML + CSS Lesson</span>
+
+      <h1>Semantic News Article</h1>
+
+      <p>
+        HTML semantics, readable article structure, aside, figure, accessible landmarks.
+        This page is built as a practical mini project, not as a tiny isolated snippet,
+        so you can open it in the browser and play with the layout.
+      </p>
+    </section>
+
+    <section class="theory" aria-labelledby="theory-title">
+
+      <article>
+        <h2 id="theory-title">Theory in simple words</h2>
+
+        <p>
+          Semantic HTML makes the document meaningful, not only visible. A browser,
+          screen reader, search engine, or future developer can understand that the page
+          has a header, navigation, article, aside, figure, and footer.
+          Use semantic tags when the content has a real role. Do not use a div for everything,
+          because a div says nothing about the content.
+        </p>
+
+        <p>
+          <strong>How to study this file:</strong>
+          first look at the HTML comments to understand the meaning of the tags.
+          Then open <code>style.css</code> and change spacing, colors, grid sizes, or states.
+          Small changes are the fastest way to learn CSS.
+        </p>
+      </article>
+
+      <aside>
+        <h2>What to try</h2>
+
+        <p>
+          Try reading the HTML from top to bottom. Even without CSS, the structure should still make sense.
+        </p>
+
+        <pre class="code-hint"><code>
+&lt;!-- Semantic News Article: inspect semantic tags and CSS rules. --&gt;
+/* Change one variable or one layout rule and refresh. */
+        </code></pre>
+      </aside>
+
+    </section>
+
+    <section class="demo-stage" aria-labelledby="demo-title">
+
+      <p class="demo-label">Live browser example</p>
+
+      <h2 id="demo-title">Interactive demo</h2>
+
+      <!-- Article is used because this content can stand alone as a complete story -->
+      <article class="news-layout">
+
+        <header class="headline">
+          <p class="eyebrow">Technology · 8 min read</p>
+          <h3>Design systems make teams faster</h3>
+          <p>A semantic article with a figure, aside notes, and clear content sections.</p>
+        </header>
+
+        <figure>
+          <div class="fake-photo">Editorial Image</div>
+          <figcaption>
+            Figure captions describe media and stay connected to the image.
+          </figcaption>
+        </figure>
+
+        <aside class="fact-box">
+          <strong>Key idea:</strong> use tags for meaning before styling.
+        </aside>
+
+        <section>
+          <h4>Why semantics matter</h4>
+          <p>
+            Screen readers and search engines can understand the structure when we use real HTML elements.
+          </p>
+        </section>
+
+      </article>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

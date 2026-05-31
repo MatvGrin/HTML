@@ -1,0 +1,58 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.editorial {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-auto-rows: 180px;
+  gap: 16px;
+}
+
+.editorial article {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: var(--soft-shadow);
+  overflow: hidden;
+}
+
+.editorial .big {
+  grid-row: span 2;
+  background: linear-gradient(135deg, #101828, #5b6cff);
+  color: white;
+}
+
+.editorial h3 {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.editorial article:hover {
+  transform: translateY(-4px);
+  transition: .25s;
+}
+
+@media (max-width: 800px) {
+  .editorial {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .editorial .big {
+    grid-row: auto;
+  }
+}
+
+/* Final polish note:
+   These last rules are about visual comfort, not new HTML theory.
+   They make the example easier to view in a real browser tab: balanced spacing,
+   readable sizes, smooth hover states, and safer responsive behavior. */
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

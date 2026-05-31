@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form Grid</title>
+
+  <link rel="stylesheet" href="../../assets/shared.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="container">
+      <a class="back-link" href="../../index.html">← Back to all examples</a>
+
+      <span class="lesson-badge">
+        form grid, radio/checkbox groups, textarea, responsive form
+      </span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="lesson-hero">
+      <span class="pill">HTML + CSS Lesson</span>
+
+      <h1>Survey Form Grid</h1>
+
+      <p>
+        form grid, radio/checkbox groups, textarea, responsive form.
+        This page is built as a practical mini project, not as a tiny isolated snippet,
+        so you can open it in the browser and play with the layout.
+      </p>
+    </section>
+
+    <section class="theory" aria-labelledby="theory-title">
+
+      <article>
+        <h2 id="theory-title">Theory in simple words</h2>
+
+        <p>
+          Survey forms often have many controls. Group related questions, use fieldsets
+          and legends, and make touch targets comfortable. CSS Grid helps align fields
+          without hurting mobile layout.
+        </p>
+
+        <p>
+          <strong>How to study this file:</strong>
+          first look at the HTML comments to understand the meaning of the tags.
+          Then open <code>style.css</code> and change spacing, colors, grid sizes, or states.
+          Small changes are the fastest way to learn CSS.
+        </p>
+      </article>
+
+      <aside>
+        <h2>What to try</h2>
+
+        <p>
+          Try tabbing through controls; the structure remains predictable.
+        </p>
+
+        <pre class="code-hint"><code>
+&lt;!-- Survey Form Grid: inspect semantic tags and CSS rules. --&gt;
+/* Change one variable or one layout rule and refresh. */
+        </code></pre>
+      </aside>
+
+    </section>
+
+    <section class="demo-stage" aria-labelledby="demo-title">
+
+      <p class="demo-label">Live browser example</p>
+
+      <h2 id="demo-title">Interactive demo</h2>
+
+      <form class="smart-form">
+
+        <h3>Survey Form Grid</h3>
+
+        <fieldset>
+          <legend>Which topics are useful?</legend>
+
+          <label>
+            <input type="checkbox" />
+            Flexbox
+          </label>
+
+          <label>
+            <input type="checkbox" />
+            Grid
+          </label>
+
+          <label>
+            <input type="checkbox" />
+            Forms
+          </label>
+        </fieldset>
+
+        <label>
+          Your feedback
+          <textarea rows="4" placeholder="Write your opinion..."></textarea>
+        </label>
+
+        <button class="btn" type="button">
+          Submit example
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

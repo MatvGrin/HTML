@@ -1,0 +1,67 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.showcase {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+}
+
+.showcase article {
+  min-height: 230px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 24px;
+  box-shadow: var(--soft-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.showcase article:first-child {
+  background: linear-gradient(135deg, #ffffff, #eef2ff);
+}
+
+.showcase article::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(91, 108, 255, 0.15);
+}
+
+.badge {
+  display: inline-block;
+  background: #101828;
+  color: white;
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-weight: 900;
+}
+
+.print article:hover {
+  transform: rotate(-1deg) translateY(-4px);
+  transition: 0.25s;
+}
+
+@media (max-width: 760px) {
+  .showcase {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Final polish note:
+   These last rules are about visual comfort, not new HTML theory.
+   They make the example easier to view in a real browser tab: balanced spacing,
+   readable sizes, smooth hover states, and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

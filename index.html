@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML & CSS Mastery Repository</title>
+  <link rel="stylesheet" href="assets/shared.css" />
+  <style>
+    .repo-hero { padding: 70px 0 34px; }
+    .repo-hero h1 { font-size: clamp(42px, 7vw, 86px); line-height:.9; letter-spacing:-.07em; margin:0; max-width:980px; }
+    .repo-hero p { color:var(--muted); font-size:19px; line-height:1.75; max-width:850px; }
+    .repo-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; padding-bottom:70px; }
+    .repo-card { text-decoration:none; background:rgba(255,255,255,.9); border:1px solid var(--line); border-radius:24px; padding:22px; min-height:190px; box-shadow:var(--soft-shadow); transition:.22s ease; }
+    .repo-card:hover { transform:translateY(-6px); box-shadow:var(--shadow); border-color:rgba(91,108,255,.45); }
+    .repo-card span { display:inline-grid; place-items:center; width:42px; height:42px; border-radius:14px; background:#101828; color:white; font-weight:950; }
+    .repo-card h2 { margin:16px 0 8px; font-size:22px; }
+    .repo-card p { color:var(--muted); line-height:1.55; }
+  
+.course-note {
+  margin: 24px auto 0;
+  max-width: 900px;
+  padding: 18px 22px;
+  border: 1px solid rgba(223,229,239,.9);
+  border-radius: 24px;
+  background: rgba(255,255,255,.78);
+  box-shadow: 0 16px 44px rgba(34,42,70,.08);
+  color: var(--muted, #637083);
+  line-height: 1.7;
+}
+
+.card, .lesson-card, li a {
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.card:hover, .lesson-card:hover, li a:hover {
+  transform: translateY(-3px);
+}
+
+</style>
+</head>
+<body>
+  <main class="container">
+
+    <section class="repo-hero">
+      <span class="pill">35 practical mini projects</span>
+      <h1>HTML & CSS examples</h1>
+      <p>Open any example in Google Chrome.</p>
+    </section>
+
+    <section class="repo-grid" aria-label="Examples list">
+      <a class="repo-card" href="examples/01-semantic-news-article/index.html"><span>01</span><h2>Semantic News Article</h2><p>HTML semantics, readable article structure, aside, figure, accessible landmarks</p></a><a class="repo-card" href="examples/02-responsive-product-grid/index.html"><span>02</span><h2>Responsive Product Grid</h2><p>CSS Grid, auto-fit, product cards, responsive spacing</p></a><a class="repo-card" href="examples/03-flexbox-app-navbar/index.html"><span>03</span><h2>Flexbox App Navbar</h2><p>Flexbox alignment, responsive navigation, gap, wrapping</p></a><a class="repo-card" href="examples/04-saas-hero-section/index.html"><span>04</span><h2>SaaS Hero Section</h2><p>hero layout, CTA hierarchy, gradients, responsive columns</p></a><a class="repo-card" href="examples/05-pricing-comparison/index.html"><span>05</span><h2>Pricing Comparison</h2><p>pricing cards, featured plan, lists, visual hierarchy</p></a><a class="repo-card" href="examples/06-accessible-contact-form/index.html"><span>06</span><h2>Accessible Contact Form</h2><p>labels, fieldsets, focus states, validation-friendly layout</p></a><a class="repo-card" href="examples/07-login-panel/index.html"><span>07</span><h2>Login Panel</h2><p>authentication layout, form groups, helper text, card composition</p></a><a class="repo-card" href="examples/08-admin-dashboard/index.html"><span>08</span><h2>Admin Dashboard</h2><p>dashboard shell, sidebar, stat cards, table preview</p></a><a class="repo-card" href="examples/09-profile-card/index.html"><span>09</span><h2>Profile Card</h2><p>card UI, avatar, badges, social links, object-fit</p></a><a class="repo-card" href="examples/10-masonry-gallery/index.html"><span>10</span><h2>Masonry Gallery</h2><p>image gallery, CSS columns/grid feeling, captions, hover states</p></a><a class="repo-card" href="examples/11-longform-typography/index.html"><span>11</span><h2>Longform Typography</h2><p>typography scale, readable line length, blockquote, code text</p></a><a class="repo-card" href="examples/12-data-table/index.html"><span>12</span><h2>Data Table</h2><p>table semantics, sticky header, zebra rows, responsive overflow</p></a><a class="repo-card" href="examples/13-positioning-playground/index.html"><span>13</span><h2>Positioning Playground</h2><p>relative, absolute, sticky, fixed, z-index examples</p></a><a class="repo-card" href="examples/14-css-loader-lab/index.html"><span>14</span><h2>CSS Loader Lab</h2><p>keyframes, transform, animation timing, reduced motion</p></a><a class="repo-card" href="examples/15-button-states-lab/index.html"><span>15</span><h2>Button States Lab</h2><p>hover, active, focus-visible, transitions, disabled styles</p></a><a class="repo-card" href="examples/16-css-only-modal/index.html"><span>16</span><h2>CSS Only Modal</h2><p>:target modal, overlay, dialog-like structure, close controls</p></a><a class="repo-card" href="examples/17-css-tabs/index.html"><span>17</span><h2>CSS Tabs</h2><p>radio inputs, labels, panels, stateful CSS without JavaScript</p></a><a class="repo-card" href="examples/18-faq-accordion/index.html"><span>18</span><h2>FAQ Accordion</h2><p>details/summary, native disclosure widget, styling states</p></a><a class="repo-card" href="examples/19-magazine-grid/index.html"><span>19</span><h2>Magazine Grid</h2><p>advanced grid placement, editorial layout, featured story</p></a><a class="repo-card" href="examples/20-responsive-media-card/index.html"><span>20</span><h2>Responsive Media Card</h2><p>picture element, aspect-ratio, fluid images, srcset idea</p></a><a class="repo-card" href="examples/21-theme-variables/index.html"><span>21</span><h2>Theme Variables</h2><p>CSS custom properties, theme tokens, local overrides</p></a><a class="repo-card" href="examples/22-ecommerce-product-page/index.html"><span>22</span><h2>Ecommerce Product Page</h2><p>product detail layout, thumbnails, price area, badges</p></a><a class="repo-card" href="examples/23-checkout-flow/index.html"><span>23</span><h2>Checkout Flow</h2><p>multi-section checkout, form grouping, order summary</p></a><a class="repo-card" href="examples/24-blog-homepage/index.html"><span>24</span><h2>Blog Homepage</h2><p>blog layout, category filters, post previews, sidebar</p></a><a class="repo-card" href="examples/25-portfolio-showcase/index.html"><span>25</span><h2>Portfolio Showcase</h2><p>portfolio grid, project cards, skills, hero intro</p></a><a class="repo-card" href="examples/26-project-timeline/index.html"><span>26</span><h2>Project Timeline</h2><p>timeline pattern, pseudo-elements, alternating content</p></a><a class="repo-card" href="examples/27-notification-center/index.html"><span>27</span><h2>Notification Center</h2><p>notification list, unread states, badges, actions</p></a><a class="repo-card" href="examples/28-calendar-ui/index.html"><span>28</span><h2>Calendar UI</h2><p>calendar grid, weekday headers, event chips, CSS grid</p></a><a class="repo-card" href="examples/29-mobile-first-travel-page/index.html"><span>29</span><h2>Mobile First Travel Page</h2><p>mobile-first CSS, progressive enhancement, media queries</p></a><a class="repo-card" href="examples/30-pseudo-elements-showcase/index.html"><span>30</span><h2>Pseudo Elements Showcase</h2><p>::before, ::after, decorative CSS, quotes, ribbons</p></a><a class="repo-card" href="examples/31-printable-invoice/index.html"><span>31</span><h2>Printable Invoice</h2><p>print styles, @media print, page-friendly layout</p></a><a class="repo-card" href="examples/32-accessibility-skip-link/index.html"><span>32</span><h2>Accessibility Skip Link</h2><p>skip links, focus management, landmarks, contrast</p></a><a class="repo-card" href="examples/33-css-units-lab/index.html"><span>33</span><h2>CSS Units Lab</h2><p>rem, em, %, vw, ch, clamp, practical sizing</p></a><a class="repo-card" href="examples/34-survey-form-grid/index.html"><span>34</span><h2>Survey Form Grid</h2><p>form grid, radio/checkbox groups, textarea, responsive form</p></a><a class="repo-card" href="examples/35-restaurant-menu/index.html"><span>35</span><h2>Restaurant Menu</h2><p>menu sections, price alignment, sticky category nav, print-friendly UI</p></a>
+    </section>
+    
+  </main>
+</body>
+</html>

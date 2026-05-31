@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Tabs</title>
+  <link rel="stylesheet" href="../../assets/shared.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="back-link" href="../../index.html">
+        ← Back to all examples
+      </a>
+
+      <span class="lesson-badge">
+        radio inputs, labels, panels, stateful CSS without JavaScript
+      </span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="lesson-hero">
+      <span class="pill">HTML + CSS Lesson</span>
+      <h1>CSS Tabs</h1>
+
+      <p>
+        radio inputs, labels, panels, stateful CSS without JavaScript. This page is built as a practical mini project,
+        not as a tiny isolated snippet, so you can open it in the browser and play with the layout.
+      </p>
+    </section>
+
+    <section class="theory" aria-labelledby="theory-title">
+      <article>
+        <h2 id="theory-title">Theory in simple words</h2>
+
+        <p>
+          Tabs show one group of content at a time. This CSS-only version uses radio buttons as state holders
+          and labels as tab buttons. It is a good exercise in selectors and sibling relationships.
+        </p>
+
+        <p>
+          <strong>How to study this file:</strong>
+          first look at the HTML comments to understand the meaning of the tags.
+          Then open <code>style.css</code> and change spacing, colors, grid sizes, or states.
+          Small changes are the fastest way to learn CSS.
+        </p>
+      </article>
+
+      <aside>
+        <h2>What to try</h2>
+
+        <p>
+          Click the labels to change panels without JavaScript.
+        </p>
+
+        <pre class="code-hint"><code>
+&lt;!-- CSS Tabs: inspect semantic tags and CSS rules. --&gt;
+/* Change one variable or one layout rule and refresh. */
+        </code></pre>
+      </aside>
+    </section>
+
+    <section class="demo-stage" aria-labelledby="demo-title">
+      <p class="demo-label">Live browser example</p>
+      <h2 id="demo-title">Interactive demo</h2>
+
+      <div class="tabs">
+        <input checked id="t1" name="tabs" type="radio">
+        <label for="t1">HTML</label>
+
+        <input id="t2" name="tabs" type="radio">
+        <label for="t2">CSS</label>
+
+        <input id="t3" name="tabs" type="radio">
+        <label for="t3">Practice</label>
+
+        <div class="panel p1">HTML gives content meaning.</div>
+        <div class="panel p2">CSS turns meaning into visual design.</div>
+        <div class="panel p3">Change values and refresh to learn faster.</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

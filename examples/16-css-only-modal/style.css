@@ -1,0 +1,54 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  place-items: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.modal:target {
+  display: grid;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 24, 40, .72);
+  backdrop-filter: blur(8px);
+}
+
+.modal section {
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: 28px;
+  padding: 30px;
+  max-width: 520px;
+  box-shadow: var(--shadow);
+}
+
+.x {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  text-decoration: none;
+  font-size: 32px;
+  color: var(--muted);
+}
+
+/* Final polish note:
+   These last rules are about visual comfort, not new HTML theory.
+   They make the example easier to view in a real browser tab: balanced spacing,
+   readable sizes, smooth hover states, and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

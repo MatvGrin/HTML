@@ -1,0 +1,72 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.table-wrap {
+  overflow: auto;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+caption {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 950;
+  padding: 20px;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: #101828;
+  color: white;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+tbody tr:nth-child(even) {
+  background: #f8faff;
+}
+
+td span {
+  border-radius: 999px;
+  background: #eef2ff;
+  color: var(--brand);
+  padding: 6px 10px;
+  font-weight: 900;
+}
+
+.ok {
+  background: #dcfce7 !important;
+  color: #166534 !important;
+}
+
+.warn {
+  background: #fff7ed !important;
+  color: #9a3412 !important;
+}
+
+/* Final polish note:
+   These last rules are about visual comfort, not new HTML theory.
+   They make the example easier to view in a real browser tab: balanced spacing,
+   readable sizes, smooth hover states, and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

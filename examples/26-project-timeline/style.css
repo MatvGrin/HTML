@@ -1,0 +1,60 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  max-width: 760px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(var(--brand), var(--brand-2));
+}
+
+.timeline article {
+  position: relative;
+  margin-left: 64px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: var(--soft-shadow);
+}
+
+.timeline article::before {
+  content: "";
+  position: absolute;
+  left: -52px;
+  top: 24px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 5px solid white;
+  box-shadow: 0 0 0 3px var(--brand);
+}
+
+time {
+  color: var(--brand);
+  font-weight: 950;
+}
+
+/* Final polish note:
+   These last rules are about visual comfort, not new HTML theory.
+   They make the example easier to view in a real browser tab: balanced spacing,
+   readable sizes, smooth hover states, and safer responsive behavior.
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,80 @@
+/*
+  This CSS file belongs only to this example.
+  The shared file gives us base colors and layout helpers.
+  Everything below shows the specific technique for this lesson.
+*/
+
+.smart-form {
+  max-width: 760px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+
+.smart-form h3 {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.smart-form label,
+.smart-form fieldset {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.smart-form input,
+.smart-form textarea,
+.smart-form select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 13px 14px;
+  background: #fbfcff;
+}
+
+.smart-form input:focus,
+.smart-form textarea:focus,
+.smart-form select:focus {
+  outline: 4px solid rgba(91, 108, 255, .18);
+  border-color: var(--brand);
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+fieldset {
+  border: 1px dashed var(--line);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.smart-form fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+@media (max-width: 650px) {
+  .two {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Final polish note:
+   These last rules are about visual comfort, not new HTML theory.
+   They make the example easier to view in a real browser tab: balanced spacing,
+   readable sizes, smooth hover states, and safer responsive behavior. */
+*/
+
+:where(.demo-stage, body) {
+  overflow-wrap: anywhere;
+}
