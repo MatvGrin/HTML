@@ -1,9 +1,3 @@
-/*
-  This CSS file belongs only to this example.
-  The shared file gives us base colors and layout helpers.
-  Everything below shows the specific technique for this lesson.
-*/
-
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -62,16 +56,6 @@
 .product strong {
   font-size: 28px;
 }
-
-/*
-  Final polish note:
-
-  These last rules are about visual comfort, not new HTML theory.
-
-  They make the example easier to view in a real browser tab:
-  balanced spacing, readable sizes, smooth hover states,
-  and safer responsive behavior.
-*/
 
 :where(.demo-stage, body) {
   overflow-wrap: anywhere;
